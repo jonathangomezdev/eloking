@@ -1,0 +1,16 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="a" x="0" y="0" width="24" height="24" rx="11.5"/>
+        <rect id="c" x="0" y="0" width="24" height="24" rx="11.5"/>
+        <path d="M19 11.815V6.093a.088.088 0 0 0-.158-.06l-5.821 7.813c-.048.058-.007.154.068.154h4.206c.116 0 .219-.059.287-.154l1.329-1.78a.393.393 0 0 0 .089-.25zm-13.911.21 4.346 5.829a.356.356 0 0 0 .293.146h4.183a.09.09 0 0 0 .069-.146L5.157 6.034A.088.088 0 0 0 5 6.092v5.684a.475.475 0 0 0 .089.248z" id="b"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FF4655" xlink:href="#a"/>
+        <use fill="#FFF" fill-rule="nonzero" xlink:href="#b"/>
+        <mask id="d" fill="#fff">
+            <use xlink:href="#c"/>
+        </mask>
+        <rect stroke-opacity=".084" stroke="#FFF" stroke-width="2" x="1" y="1" width="22" height="22" rx="11"/>
+        <path fill="#FFF" opacity=".2" mask="url(#d)" d="M0 0h24v12H0z"/>
+    </g>
+</svg>

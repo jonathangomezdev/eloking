@@ -1,0 +1,51 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="a" x="0" y="0" width="24" height="24" rx="12"/>
+        <rect id="c" x="0" y="0" width="24" height="24" rx="1"/>
+        <rect id="e" x="0" y="0" width="32" height="25" rx="1"/>
+        <rect id="g" x="0" y="0" width="32" height="24" rx="1"/>
+        <rect id="i" x="0" y="0" width="24" height="24" rx="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <rect stroke="#232B46" stroke-width="2" x="1" y="1" width="22" height="22" rx="11"/>
+        <g mask="url(#b)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <use fill="#9E3039" xlink:href="#c"/>
+            <path fill="#FFF" mask="url(#d)" d="M0 10h24v4H0z"/>
+        </g>
+        <g mask="url(#b)">
+            <g transform="translate(-5 -1)">
+                <mask id="f" fill="#fff">
+                    <use xlink:href="#e"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#e"/>
+                <path fill="#FFF" mask="url(#f)" d="M0 0h32v25H0z"/>
+                <path stroke="#C09300" mask="url(#f)" d="M13.606 10.412h2.553V9h1.634v1.412h2.6V16l-2.6-1.79V16h-1.634v-1.79L13.606 16z"/>
+                <path fill="#CE1126" mask="url(#f)" d="M0 0h32v8H0z"/>
+                <path fill="#000" mask="url(#f)" d="M0 17h32v8H0z"/>
+            </g>
+        </g>
+        <g mask="url(#b)">
+            <g transform="translate(-4)">
+                <mask id="h" fill="#fff">
+                    <use xlink:href="#g"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#g"/>
+                <path fill="#B22234" mask="url(#h)" d="M0 0h32v24H0z"/>
+                <g mask="url(#h)">
+                    <path fill="#3C3B6E" d="M0 0h15v15H0z"/>
+                    <path fill="#FFF" d="M2.143 2.143h2.143v2.143H2.143zM6.429 2.143h2.143v2.143H6.429zM10.714 2.143h2.143v2.143h-2.143zM10.714 6.429h2.143v2.143h-2.143zM6.429 6.429h2.143v2.143H6.429zM2.143 6.429h2.143v2.143H2.143zM10.714 10.714h2.143v2.143h-2.143zM6.429 10.714h2.143v2.143H6.429zM2.143 10.714h2.143v2.143H2.143z"/>
+                </g>
+                <g fill="#FFF" mask="url(#h)">
+                    <path d="M15 1h18v2H15zM15 5h18v2H15zM15 9h18v2H15zM-7 14h39v2H-7zM-7 21.909h39V24H-7zM-7 18h39v2H-7z"/>
+                </g>
+            </g>
+        </g>
+        <rect stroke-opacity=".08" stroke="#FFF" stroke-width="2" x="1" y="1" width="22" height="22" rx="11"/>
+    </g>
+</svg>

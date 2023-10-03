@@ -1,0 +1,249 @@
+@import './scss-variables.scss';
+
+@mixin flex($justify: unset, $align: unset) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin h($size, $weight, $style, $stretch, $height, $spacing) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    font-stretch: $stretch;
+    line-height: $height;
+    letter-spacing: $spacing;   
+}
+
+@mixin ts($speed: 0.15s, $ease: ease-in-out, $type: all) {
+    transition: $type $speed $ease;
+}
+@mixin counter($right, $top, $borderColor: #FF5160, $background: #FF4655, $afterBorder: #FE7581, $afterBackground: #FF6B77) {
+    @include ts();
+    @include flex(center, center);
+    position: absolute;
+    height: 16px;
+    right: $right;
+    top: $top;
+    border: solid 2px $borderColor;
+    background-color: $background;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0 4px;
+    min-width: 16px;
+
+    .number {
+        @include h(10px, bold, normal, normal, normal, 0.2px);
+        z-index: 2;
+        color: $col-white;
+        text-align: center;
+    }
+
+    &::after {
+        @include ts();
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        box-sizing: border-box;
+        width: calc(100% + 4px);
+        height: 8px;
+        background-color: $afterBackground;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border: solid 2px $afterBorder;
+        border-bottom: 0;
+        content: '';
+    }
+}
+
+@mixin alert() {
+    position: fixed;
+    top: 88px;
+    right: 40px;
+    background: $col-dar2;
+    box-shadow: 0px 10px 20px rgba(1, 4, 11, 0.196656);
+    border-radius: 28px;
+    @include flex(flex-start, center);
+    padding: 12px 76px 12px 25px;
+    z-index: 950;
+    max-width: 300px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 24px;
+        display: block;
+        width: 16px;
+        background: url('/img/panel/icons/alert.svg') center center no-repeat;
+        background-size: cover;
+        height: 16px;
+        animation:spin 3s linear infinite;
+        @keyframes spin {
+            100% {
+                transform: translateY(-50%) rotate(360deg);
+            }
+        }
+    }
+    &, span {
+        @include h(12px, 500, normal, normal, 32px, 0.08px);
+        color: $col-white;
+    }
+
+    &.alert-success, &.success {
+        background: linear-gradient(135deg, #258CBF 0%, #4ED3BE 100%);
+        color: #fff;
+    }
+
+    &.error {
+        ul {
+            li {
+                &:marker {
+                    display: none;
+                }
+            }
+        }
+        background: linear-gradient(315deg, #FB6D7A 0%, #C52374 100%);
+        color: #fff;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+@mixin ma() {
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(300%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    animation:fadeIn 0.25s normal forwards ease-in-out;
+    &--long {
+        animation:fadeIn 0.5s normal forwards ease-in-out;
+    }
+}
+
+@mixin loading() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 902;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 2, 10, 0.7);
+
+    opacity: 0;
+    pointer-events: none;
+
+    &--table-loading {
+        position: absolute;
+        background-color: rgba(5, 10, 32, 0.9);
+        left: -100%;
+        right: -100%;
+        z-index: 30;
+    }
+
+    .loading-inner {
+        border: solid 2px #232b46;
+        background-color: #050a20;
+        width: 104px;
+        height: 104px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.show {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .lds-spinner {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        transform: scale(0.4);
+    }
+    .lds-spinner div {
+        transform-origin: 40px 40px;
+        animation: lds-spinner 1.2s linear infinite;
+    }
+    .lds-spinner div:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 37px;
+        width: 6px;
+        height: 18px;
+        border-radius: 20%;
+        background-color: rgba(72, 66, 209, 0.53);
+    }
+    .lds-spinner div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -1.1s;
+    }
+    .lds-spinner div:nth-child(2) {
+        transform: rotate(30deg);
+        animation-delay: -1s;
+    }
+    .lds-spinner div:nth-child(3) {
+        transform: rotate(60deg);
+        animation-delay: -0.9s;
+    }
+    .lds-spinner div:nth-child(4) {
+        transform: rotate(90deg);
+        animation-delay: -0.8s;
+    }
+    .lds-spinner div:nth-child(5) {
+        transform: rotate(120deg);
+        animation-delay: -0.7s;
+    }
+    .lds-spinner div:nth-child(6) {
+        transform: rotate(150deg);
+        animation-delay: -0.6s;
+    }
+    .lds-spinner div:nth-child(7) {
+        transform: rotate(180deg);
+        animation-delay: -0.5s;
+    }
+    .lds-spinner div:nth-child(8) {
+        transform: rotate(210deg);
+        animation-delay: -0.4s;
+    }
+    .lds-spinner div:nth-child(9) {
+        transform: rotate(240deg);
+        animation-delay: -0.3s;
+    }
+    .lds-spinner div:nth-child(10) {
+        transform: rotate(270deg);
+        animation-delay: -0.2s;
+    }
+    .lds-spinner div:nth-child(11) {
+        transform: rotate(300deg);
+        animation-delay: -0.1s;
+    }
+    .lds-spinner div:nth-child(12) {
+        transform: rotate(330deg);
+        animation-delay: 0s;
+    }
+    @keyframes lds-spinner {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

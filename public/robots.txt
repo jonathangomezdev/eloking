@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /*?
+Disallow: /panel
+Disallow: /api
+Disallow: /broadcasting
+Disallow: /logout
+Disallow: /password
+
+Sitemap: https://eloking.com/sitemap.xml

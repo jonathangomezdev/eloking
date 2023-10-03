@@ -1,0 +1,101 @@
+.main-background {
+    &.csgo {
+        background-image: url('/img/backgrounds/csgo/home.jpg');
+    }
+}
+
+.container {
+    .selectbox {
+        &.content {
+            transition: all 0.15s ease-in-out;
+            &:hover {
+                box-shadow: 0 0 0 2px rgba(78, 211, 190, 0.8) inset;
+            }
+            &.pointer {
+                cursor: pointer;
+            }
+            .icon {
+                background: #050a20;
+                width: 64px;
+                height: 64px;
+                border: solid 2px #232b46;
+                border-radius: 50%;
+                -webkit-border-radius: 50px;
+
+                &.matchmaking {
+                    background: url('/img/icons/csgo/matchmaking.svg') center center no-repeat;
+                }
+
+                &.faceit {
+                    background: url('/img/icons/csgo/faceit.svg') center center no-repeat;
+                }
+
+                &.esea {
+                    background: url('/img/icons/csgo/esea.svg') center center no-repeat;
+                }
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .highlight {
+        background: url('/img/backgrounds/csgo/highlight.jpg');
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/backgrounds/csgo/highlight@2x.jpg');
+            background-size: cover;
+        }
+    }
+
+    &.bananas {
+        background: url('/img/backgrounds/csgo/bananas.png') top right no-repeat;
+        background-size: 289px 273px;
+
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/backgrounds/csgo/bananas@2x.png') top right no-repeat;
+            background-size: 289px 273px;
+        }
+
+        &.cut-top {
+            background-position-y: -50px;
+        }
+    }
+
+    &.bomb {
+        background: url('/img/backgrounds/csgo/bomb.png') top right no-repeat;
+        background-size: 252px 280px;
+        background-position-y: 95px;
+        overflow: hidden;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/backgrounds/csgo/bomb@2x.png') top right no-repeat;
+            background-size: 252px 280px;
+            background-position-y: 95px;
+        }
+    }
+}
+
+.faceit-page {
+    .container {
+        h1.short {
+            background-image: linear-gradient(105deg, #258cbf, #4ed3be);
+        }
+    }
+
+    .letter {
+        .background-text {
+            font-size: 160px;
+        }
+        h2 {
+            max-width: 250px;
+            margin-top: 158px;
+        }
+    }
+
+    &.faceit-background {
+        background-image: url('/img/backgrounds/bg-faceit.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

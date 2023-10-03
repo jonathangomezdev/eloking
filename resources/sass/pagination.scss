@@ -1,0 +1,46 @@
+@import './scss-variables';
+@import './mixins.scss';
+
+.pagination {
+    @include flex(flex-start, center);
+    list-style-type: none;
+    margin-top: 56px;
+
+    .page-item {
+
+        &:first-of-type, &:last-of-type {
+            display: none;
+        }
+        .page-link {
+            width: 56px;
+            height: 56px;
+            @include flex(center, center);
+            border-radius: 50%;
+            cursor: pointer;
+            font-family: "Poppins", sans-serif;
+            color: $col-gray0;
+            @include ts();
+            @include h(14px, normal, normal, normal, 32px, 0.1px);
+            background: transparent;
+            border: 2px solid transparent;
+            &:hover {
+                color: $col-white;
+            }
+        }
+
+        &.disabled {
+            cursor: not-allowed;
+        }
+
+        &.active {
+            .page-link {
+                border: 2px solid $col-border;
+                color: #3AB1BF;
+                &:hover {
+                    color: $col-white;
+                    border-color: $col-border2;
+                }
+            }
+        }
+    }
+}

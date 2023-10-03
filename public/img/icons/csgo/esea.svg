@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="49.682%" x2="50%" y2="50%" id="b">
+            <stop stop-color="#FFF" stop-opacity=".2" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+        <rect id="a" x="0" y="0" width="24" height="24" rx="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#0BBB03" xlink:href="#a"/>
+        <rect stroke-opacity=".2" stroke="#FFF" stroke-width="2" stroke-linejoin="square" fill="url(#b)" x="1" y="1" width="22" height="22" rx="11"/>
+        <path d="M20 9.583 8.826 12.416c1.438-.846 2.167-1.79 1.95-2.884l3.624.02L13.963 5l-3.32 4.52L5 9.585l3.523 2.94L5.496 17l5.472-2.62 3.8 2.62-.17-4.476L20 9.583z" fill="#FFF" mask="url(#c)"/>
+        <path d="m30 10.603-30.544 7.79c3.932-2.326 5.924-4.921 5.331-7.931l9.907.056L13.5-2 4.424 10.432-11 10.605l9.63 8.085L-9.642 31l14.957-7.204L15.697 31l-.46-12.31L30 10.603z" fill="#0D6432" opacity=".11" mask="url(#c)"/>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="232" height="232" viewBox="0 0 232 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_102:2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="232" height="232">
+<path d="M232 116C232 51.935 180.065 0 116 0C51.935 0 0 51.935 0 116C0 180.065 51.935 232 116 232C180.065 232 232 180.065 232 116Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_102:2)">
+<path d="M232 116C232 51.935 180.065 0 116 0C51.935 0 0 51.935 0 116C0 180.065 51.935 232 116 232C180.065 232 232 180.065 232 116Z" fill="#080F28"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M372.614 43.1082L44.3725 127.381C86.6231 102.224 108.027 74.1494 101.662 41.5865L208.125 42.1952L195.293 -93.23L97.7563 41.2568L-68 43.1335L35.4963 130.602L-53.4177 263.77L107.317 185.837L218.904 263.77L213.958 130.602L372.614 43.1082Z" fill="#050A20"/>
+</g>
+<mask id="mask1_102:2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="232" height="232">
+<path d="M232 116C232 51.935 180.065 0 116 0C51.935 0 0 51.935 0 116C0 180.065 51.935 232 116 232C180.065 232 232 180.065 232 116Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_102:2)">
+</g>
+</svg>

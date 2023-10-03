@@ -1,0 +1,93 @@
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .main-background {
+        background: url('/img/backgrounds/bg-home@2x.png') center top no-repeat;
+        background-size: 1480px 832px;
+        @media (max-width: 767px) {
+            background: url('/img/backgrounds/bg-home-s@2x.png') center 574px no-repeat;
+            background-size: 450px;
+        }
+        &--valorant {
+            background: url('/img/backgrounds/valorant/valorant-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/valorant/valorant-2x-s.png') center 414px no-repeat;
+                background-size: 450px;
+            }
+        }
+        &--lol {
+            background: url('/img/backgrounds/lol/league-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/lol/league-2x-s.png') center 414px no-repeat;
+                background-size: 450px;
+            }
+        }
+        &--csgo {
+            background: url('/img/backgrounds/csgo/cs-homepage-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/csgo/cs-homepage-2x-s.png') center 532px no-repeat;
+                background-size: 450px;
+            }
+        }
+        &--csgo-rank {
+            background: url('/img/backgrounds/csgo/cs-rankboost-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/csgo/cs-rankboost-2x-s.png') center 414px no-repeat;
+                background-size: 450px;
+            }
+        }
+        &--csgo-faceit {
+            background: url('/img/backgrounds/csgo/cs-faceit-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/csgo/cs-faceit-2x-s.png') center 414px no-repeat;
+                background-size: 450px;
+            }
+        }
+        &--csgo-esea {
+            background: url('/img/backgrounds/csgo/cs-esea-2x.png') center top no-repeat;
+            background-size: 1480px 832px;
+            @media (max-width: 767px) {
+                background: url('/img/backgrounds/csgo/cs-esea-2x-s.png') center 414px no-repeat;
+                background-size: 450px;
+            }
+        }
+    }
+
+    .container {
+        &.page-not-found {
+            .hand-icon {
+                background: url('/img/icons/hand@2x.png') center center no-repeat;
+                background-size: 135px 150px;
+            }
+        }
+    }
+    .modal-overlay .modal.checkout {
+        background: url('/img/checkout@2x.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    @media (min-width: 1064px) {
+        .container {
+            .select-type {
+                .selectbox-wrap {
+                    .selectbox {
+                        &.lol {
+                            background: url('/img/icons/gametype-lol@2x.png') center center no-repeat #050a20;
+                            background-size: cover;
+                        }
+                        &.valorant {
+                            background: url('/img/icons/gametype-valorant@2x.png') center center no-repeat #050a20;
+                            background-size: cover;
+                        }
+                        &.csgo {
+                            background: url('/img/icons/gametype-csgo@2x.png') center center no-repeat #050a20;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>facebook</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="login-validation-[landing-page-real-content]" transform="translate(-864.000000, -672.000000)">
+            <g id="form" transform="translate(224.000000, 136.000000)">
+                <g transform="translate(308.000000, 152.000000)" id="content">
+                    <g transform="translate(44.000000, 144.000000)">
+                        <g id="buttons-social-media" transform="translate(192.000000, 224.000000)">
+                            <g id="facebook" transform="translate(96.000000, 16.000000)">
+                                <rect id="Rectangle" x="0" y="0" width="24" height="24" rx="2"></rect>
+                                <path d="M11.9999872,2 C6.5,2 2,6.50803213 2,12.060241 C2,17.0803213 5.65999533,21.246988 10.4399892,22 L10.4399892,14.9718876 L7.89999247,14.9718876 L7.89999247,12.060241 L10.4399892,12.060241 L10.4399892,9.84136546 C10.4399892,7.32128514 11.9299873,5.93574297 14.2199844,5.93574297 C15.309983,5.93574297 16.4499816,6.12650602 16.4499816,6.12650602 L16.4499816,8.6064257 L15.1899832,8.6064257 C13.9499848,8.6064257 13.5599853,9.37951807 13.5599853,10.1726908 L13.5599853,12.060241 L16.3399817,12.060241 L15.8899823,14.9718876 L13.5599853,14.9718876 L13.5599853,22 C18.4287312,21.2279852 22.0110282,17.0091209 22,12.060241 C22,6.50803213 17.4999802,2 11.9999872,2 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

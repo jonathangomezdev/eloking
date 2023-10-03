@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="23px" viewBox="0 0 20 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/24x24/league-of-legends</title>
+    <defs>
+        <linearGradient x1="8.67768595%" y1="100%" x2="99.3730271%" y2="-25.348831%" id="linearGradient-1">
+            <stop stop-color="#C49540" offset="0%"></stop>
+            <stop stop-color="#E9B65E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.0321778%" y1="100%" x2="56.9678222%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#1EA3AE" offset="0%"></stop>
+            <stop stop-color="#2DE8E9" offset="53.2501114%"></stop>
+            <stop stop-color="#D8D8D8" offset="100%"></stop>
+            <stop stop-color="#158997" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page-real-content" transform="translate(-292.000000, -1349.000000)">
+            <g id="game-select" transform="translate(224.000000, 1126.000000)">
+                <g id="1" transform="translate(-0.000000, 162.000000)">
+                    <g id="logo" transform="translate(40.000000, 40.000000)">
+                        <g id="Group" transform="translate(26.000000, 20.500000)">
+                            <path d="M15.8748949,19.0006171 L15.876,18.999 L19.1416998,18.9997276 L19.1412172,19.0002199 L21.0074135,19 L19.7525741,23 L6,23 L7,21 L7,21 L7,3 L7,3 L6,1 L11.9925865,1 L11.9919772,2.00000315 L12,2 L12,4 L12,4 L11.993,4 L12,19 L15.8748949,19.0006171 Z M4.99975564,4.85880677 L4.9998362,8.12428802 C4.36277489,9.27246909 4,10.5938692 4,12 C4,13.4061308 4.36277489,14.7275309 4.9998362,15.875712 L4.99975564,19.1411932 C3.1485367,17.3262869 2,14.797271 2,12 C2,9.20272899 3.1485367,6.67371309 4.99975564,4.85880677 Z M22,12 C22,13.8213684 21.5130646,15.5290069 20.6622724,16.9998369 L18.2452655,17.0001315 C19.3432396,15.6305133 20,13.891954 20,12 C20,8.2724501 17.4506308,5.14033727 14.0003581,4.25212715 L14.0009807,2.20023535 C18.5649727,3.12715495 22,7.16243067 22,12 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                            <path d="M14,17 L16,17 C17.7197701,14.932184 18.3864368,12.932184 18,11 C17.6135632,9.06781596 16.2802299,7.4011493 14,6 L14,17 Z" id="Path-2" fill="url(#linearGradient-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,176 @@
+@import './scss-variables';
+@import './mixins.scss';
+
+.video-modal-overlay {
+    position: fixed;
+    padding: 0 32px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(1, 2, 10, 0.7);
+    @include flex(center, center);
+    z-index: 999;
+    &, & > * {
+        box-sizing: border-box;
+    }
+    opacity: 0;
+    pointer-events: none;
+    &.show {
+        opacity: 1;
+        pointer-events: all;
+        .modal-animation {
+            @include ma();
+        }
+    }
+    .video-modal {
+        max-width: 1200px;
+        max-height: 694px;
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        position: relative;
+        background-color: $col-dark;
+        height: 100%;
+        @media (max-width: 1199px) {
+            height: unset;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .forgot-password-btn-close-modal {
+            position: absolute;
+            right: -28px;
+            top: -28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 28px 28px 28px 8px;
+            background-color: $col-dark;
+            font-size: 32px;
+            @include flex(center, center);
+            outline: none;
+            cursor: pointer;
+            border: 2px solid $col-border;
+            box-shadow: 0px 10px 20px rgba(1, 4, 11, 0.196656);
+            transition: all 0.15s ease-in-out;
+            z-index: 2;
+            i {
+                transition: all 0.15s ease-in-out;
+                background-image: linear-gradient(106deg, #258cbf, #4ed3be);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-style: normal;
+                line-height: 20px;
+            }
+            &:hover {
+                i {
+                    background-image: linear-gradient(106deg, #5fc1d7, #5fd7c4);
+                }
+            }
+        }
+        iframe {
+            border-radius: 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+
+.video-btn {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: relative;
+    @include h(14px, normal, normal, normal, 21px, 0.1px);
+    color: $col-gray0;
+    margin: 11px 0 0 24px;
+    cursor: pointer;
+    @include flex(flex-start, center);
+    display: inline-flex;
+    @include ts();
+    @media (max-width: 1063px) {
+        margin-top: 24px;
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        border: 2px solid #232B46;
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        @include ts();
+    }
+    &::after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 6px;
+        border-color: transparent transparent transparent #40bbbf;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+        @include ts();
+    }
+
+    &:hover::before {
+        background: $col-blue;
+        animation: pulse 2s infinite;
+    }
+}
+
+.container .video-thumbnail.play-video {
+    background: url('/img/icons/video-play.jpg') center center no-repeat;
+    background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        background: url('/img/icons/video-play@2x.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    &--lol {
+        background: url('/img/icons/lol/video-play.png') center center no-repeat;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/icons/lol/video-play@2x.png') center center no-repeat;
+            background-size: cover;
+        }
+    }
+    &--valorant {
+        background: url('/img/icons/valorant/video-play.png') center center no-repeat;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/icons/valorant/video-play@2x.png') center center no-repeat;
+            background-size: cover;
+        }
+    }
+    &--csgo {
+        background: url('/img/icons/csgo/video-play.png') center center no-repeat;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/icons/csgo/video-play@2x.png') center center no-repeat;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.container {
+    .highlight {
+        background: url('/img/backgrounds/valorant/highlight.jpg');
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            background: url('/img/backgrounds/valorant/highlight@2x.jpg');
+            background-size: cover;
+        }
+    }
+}

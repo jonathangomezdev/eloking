@@ -1,0 +1,26 @@
+.container {
+    .highlight {
+        background: url('/img/backgrounds/lol/highlight.png');
+        background-size: cover;
+    }
+
+    &.bomb {
+        background: url('/img/backgrounds/lol/dragon.png') top right no-repeat;
+        background-size: 264px 202px;
+        background-position-y: 64px;
+        overflow: hidden;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        .highlight {
+            background: url('/img/backgrounds/lol/highlight@2x.png');
+        }
+
+        &.bomb {
+            background: url('/img/backgrounds/lol/dragon@2x.png') top right no-repeat;
+            background-size: 264px 202px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>“</title>
+    <defs>
+        <linearGradient x1="23.1485639%" y1="31.1222811%" x2="90.2814593%" y2="45.7883919%" id="linearGradient-1">
+            <stop stop-color="#258CBF" offset="0%"></stop>
+            <stop stop-color="#4ED3BE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M293.9,372.5 L293.9,356.75 L288.2,356.75 L293.9,341 L286.4,341 L278,358.25 L278,372.5 L293.9,372.5 Z M317.9,372.5 L317.9,356.75 L312.2,356.75 L317.9,341 L310.4,341 L302,358.25 L302,372.5 L317.9,372.5 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page-real-content" transform="translate(-1166.000000, -3680.000000)" fill-rule="nonzero">
+            <g id="section-discreet" transform="translate(224.000000, 3168.000000)">
+                <g id="img" transform="translate(616.000000, 168.000000)">
+                    <g id="marrks" transform="translate(48.023077, 3.000000)">
+                        <g id="“" transform="translate(297.950000, 356.750000) rotate(-180.000000) translate(-297.950000, -356.750000) ">
+                            <use fill="#0A102A" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
